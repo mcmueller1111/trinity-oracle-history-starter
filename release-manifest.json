@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "mode": "OPT_IN_HISTORICAL_VERIFICATION_ONLY",
+  "files": [
+    {
+      "name": "sdk.mjs",
+      "sha256": "2a211d6d1eb685e30fdce5edd067ccd635c8a5343d64af890e322611d15fac3d"
+    },
+    {
+      "name": "rpc.mjs",
+      "sha256": "943c1d6f53bf789c05661d1752497e9c390868a9a07f94a77847707b4dcc0fc8"
+    },
+    {
+      "name": "binding.mjs",
+      "sha256": "edd2be2946319b635134d3192abb1da3beb014de65ee88553ee944465f7c378a"
+    },
+    {
+      "name": "verify.mjs",
+      "sha256": "4b0cb0768c1df107628afc283060d102f814f966b2aee7221051546ee64ced12"
+    },
+    {
+      "name": "README.txt",
+      "sha256": "811f3644e1fcb96fe2121e9dfc4879892c4ac0c9994a48c160dc20f492e0296a"
+    },
+    {
+      "name": "LICENSE.txt",
+      "sha256": "dfc764989087413331ac1456d2d0721359bc7e723811b200e96be98a51c3967f"
+    },
+    {
+      "name": "HistoryConsumer.sol",
+      "sha256": "2c0b1547eb3aa45019f8c4058a585fea733c90be32cb333a46cf4ca5c7d8aa7a"
+    },
+    {
+      "name": "verify-workflow.yml",
+      "sha256": "1004a58d28f7f75093dbd6e7740466e0594f073371ee8cc5b93ae59338ed033b"
+    },
+    {
+      "name": "package.json",
+      "sha256": "23b2147bf1e54c309deea474970cb8fd7b8be9dfbc0a8d5038dde72059bd9844"
+    },
+    {
+      "name": "package-lock.json",
+      "sha256": "698c7bfece868d6e1c8c7fcbd856c33d2dbd54f04d3beb18503a4b694d4d41c0"
+    }
+  ]
+}
