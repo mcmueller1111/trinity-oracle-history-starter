@@ -1,0 +1,11 @@
+{
+  "name": "trinity-oracle-history-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Explicit opt-in historical verification, not an active paid randomness service.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "dependencies": { "ethers": "6.17.0" },
+  "scripts": { "verify": "node verify.mjs --read-public-history" }
+}
