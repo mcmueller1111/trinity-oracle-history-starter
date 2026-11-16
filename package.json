@@ -1,11 +1,29 @@
 {
   "name": "trinity-oracle-history-starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Explicit opt-in historical verification, not an active paid randomness service.",
+  "description": "Read-only historical verification and Ethers integration examples; not an active paid service.",
   "license": "MIT",
   "engines": { "node": ">=22" },
   "dependencies": { "ethers": "6.17.0" },
-  "scripts": { "verify": "node verify.mjs --read-public-history" }
+  "scripts": {
+    "verify": "node verify.mjs --read-public-history",
+    "test": "node --test"
+  },
+  "files": [
+    "sdk.mjs",
+    "rpc.mjs",
+    "binding.mjs",
+    "verify.mjs",
+    "ethers-history.mjs",
+    "HistoryConsumer.sol",
+    "verify-workflow.yml",
+    "template-manifest.json",
+    "registry-discovery.json",
+    "frameworks/",
+    "starter.test.mjs",
+    "README.txt",
+    "LICENSE.txt"
+  ]
 }

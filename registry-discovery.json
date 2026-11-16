@@ -1,0 +1,93 @@
+{
+  "schema": "trinity.public-history-discovery/v1",
+  "recordStatus": "HISTORICAL_READ_ONLY_METADATA",
+  "registrySubmissionStatus": "NOT_SUBMITTED",
+  "publicSourceReferenceVersion": "v0.1.0",
+  "supportedNetworks": [
+    {
+      "name": "Base Sepolia",
+      "chainId": 84532,
+      "scope": "historical-test-evidence-only",
+      "currentService": false
+    }
+  ],
+  "historicalSnapshot": {
+    "blockNumber": 56895909,
+    "blockHash": "0x9ababcf1c82c6857ef6e2804091b5661718cf7f1a152e9ce8c26a1b9b584c41d",
+    "paidTrialMaximumRequests": 3,
+    "paidTrialRequestsConsumed": 3,
+    "acceptingRequests": false
+  },
+  "contracts": [
+    {
+      "role": "historical-paid-trial",
+      "address": "0xf12a01adccc070d1319899e7da74a92c60380ba9",
+      "runtimeKeccak256": "0x7f7f1015d3390992cd4eb6335776f81276c197e6bc3af80dc772412655660406",
+      "status": "exhausted-historical-trial",
+      "activeOffer": false
+    },
+    {
+      "role": "historical-delivery-test",
+      "address": "0x82d87ca9e79a3474f764f7e68976f49c07c2d287",
+      "runtimeKeccak256": "0x72a63af63ed71cdfc582a07494e02513837bef144ae3466b043c10c95e76b6aa",
+      "status": "historical-test-only",
+      "activeOffer": false
+    },
+    {
+      "role": "historical-oracle-test",
+      "address": "0x347b8bb39316786ff6fd3587ef88a669de507005",
+      "runtimeKeccak256": "0x8badeed91c7653d9a26a6035fd547d102bea7c555ead4b998f3545f6071dc033",
+      "status": "historical-test-only",
+      "activeOffer": false
+    }
+  ],
+  "readOnlyViews": [
+    {
+      "signature": "trialBounds()",
+      "returns": ["uint256 requestsOpened", "uint256 maxRequests"],
+      "minimumChainId": 84532
+    },
+    {
+      "signature": "historicalOrder(bytes32)",
+      "returns": ["address payer", "uint256 amount", "bytes32 quoteHash", "uint8 state"],
+      "minimumChainId": 84532
+    },
+    {
+      "signature": "orders(bytes32)",
+      "returns": ["address payer", "uint256 amount", "bytes32 quoteHash", "uint8 state"],
+      "contractRole": "historical-paid-trial"
+    },
+    {
+      "signature": "requestsOpened()",
+      "returns": ["uint256"],
+      "contractRole": "historical-paid-trial"
+    },
+    {
+      "signature": "MAX_REQUESTS()",
+      "returns": ["uint256"],
+      "contractRole": "historical-paid-trial"
+    }
+  ],
+  "offers": {
+    "activePublicOracleOffers": [],
+    "activePrivateCapsuleOffers": [],
+    "activePurchases": false,
+    "privateCapsuleFulfillment": false
+  },
+  "trustLabels": {
+    "history": "pinned historical snapshot; verifier depends on selected RPC responses",
+    "rpcOperatorIndependence": "not established by using different URLs",
+    "operatorControl": "operator-attested",
+    "physicalQuantumOrigin": "not independently verified",
+    "privateEntropy": "not provided by this public history record",
+    "audit": "no independent security audit claim"
+  },
+  "links": {
+    "publicReferenceRepository": "https://github.com/mcmueller1111/trinity-oracle-history-starter",
+    "publicReferenceRelease": "https://github.com/mcmueller1111/trinity-oracle-history-starter/releases/tag/v0.1.0",
+    "documentation": "https://github.com/mcmueller1111/trinity-oracle-history-starter/blob/v0.1.0/README.txt",
+    "historicalConsumerSource": "https://github.com/mcmueller1111/trinity-oracle-history-starter/blob/v0.1.0/HistoryConsumer.sol",
+    "historicalBinding": "https://github.com/mcmueller1111/trinity-oracle-history-starter/blob/v0.1.0/binding.mjs",
+    "paidContractSourceVerification": "https://sourcify.dev/server/v2/contract/84532/0xf12a01adccc070d1319899e7da74a92c60380ba9"
+  }
+}

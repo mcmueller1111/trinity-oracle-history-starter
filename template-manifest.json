@@ -1,0 +1,46 @@
+{
+  "templateVersion": "0.2.0",
+  "package": "trinity-oracle-history-starter",
+  "status": "READ_ONLY_HISTORICAL_VERIFICATION",
+  "registryDiscoveryMetadata": "registry-discovery.json",
+  "supportedExample": {
+    "chainId": 84532,
+    "network": "Base Sepolia",
+    "mode": "historical-only",
+    "activeCustomerService": false
+  },
+  "defaultEffects": {
+    "installationScripts": false,
+    "walletOrSigner": false,
+    "transactionSubmission": false,
+    "automaticPayment": false,
+    "telemetry": false,
+    "verificationWorkflow": "manual-dispatch-only"
+  },
+  "publicFiles": [
+    "sdk.mjs",
+    "rpc.mjs",
+    "binding.mjs",
+    "verify.mjs",
+    "ethers-history.mjs",
+    "starter.test.mjs",
+    "template-manifest.json",
+    "registry-discovery.json",
+    "HistoryConsumer.sol",
+    "verify-workflow.yml",
+    "frameworks/hardhat/hardhat.config.cjs",
+    "frameworks/hardhat/contracts/HistoryConsumer.sol",
+    "frameworks/hardhat/read-history.mjs",
+    "frameworks/foundry/foundry.toml",
+    "frameworks/foundry/src/HistoryConsumer.sol",
+    "package.json",
+    "package-lock.json",
+    "README.txt",
+    "LICENSE.txt"
+  ],
+  "excluded": [
+    "private capsule payloads and keys",
+    "active deployment or purchase configuration",
+    "credentials, owner state, worker code, and API secrets"
+  ]
+}

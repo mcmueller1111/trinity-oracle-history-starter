@@ -1,0 +1,10 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = []
+solc_version = "0.8.24"
+auto_detect_solc = false
+offline = true
+ffi = false
+fs_permissions = []
+remappings = []

@@ -1,6 +1,11 @@
 {
-  "version": "0.1.0",
-  "mode": "OPT_IN_HISTORICAL_VERIFICATION_ONLY",
+  "version": "0.2.0",
+  "mode": "READ_ONLY_HISTORICAL_VERIFICATION",
+  "distribution": {
+    "status": "PUBLIC_READ_ONLY_SOURCE",
+    "priorPublicRelease": "https://github.com/mcmueller1111/trinity-oracle-history-starter/releases/tag/v0.1.0"
+  },
+  "privateCapsulesIncluded": false,
   "files": [
     {
       "name": "sdk.mjs",
@@ -19,8 +24,44 @@
       "sha256": "4b0cb0768c1df107628afc283060d102f814f966b2aee7221051546ee64ced12"
     },
     {
+      "name": "ethers-history.mjs",
+      "sha256": "fe1fbc6f450e638ff0404948b4dd2da2cd4f01b7acb166cefcf69055f64a3ee8"
+    },
+    {
+      "name": "starter.test.mjs",
+      "sha256": "467256a50b3cf3260be540744f5bb597f6870c3d5e1152ce995ec87723c586c1"
+    },
+    {
+      "name": "template-manifest.json",
+      "sha256": "e0f20f58fa11e161ae8c26a4a48d7e516f2e75f6dc945c917d402717756c7e03"
+    },
+    {
+      "name": "registry-discovery.json",
+      "sha256": "5fd5fff74235e0ef65a81de32670d129f55d9b01ed36562d5d66814088659d86"
+    },
+    {
+      "name": "frameworks/hardhat/hardhat.config.cjs",
+      "sha256": "ed1d4971d0b77cf1e3513600b2fd4ddb2058979e2b15c4e0d152058ffa8474b7"
+    },
+    {
+      "name": "frameworks/hardhat/contracts/HistoryConsumer.sol",
+      "sha256": "1513267f44ade50aa8953f3aec20a4a382da9cf728e57c9e56e9c71b6cede883"
+    },
+    {
+      "name": "frameworks/hardhat/read-history.mjs",
+      "sha256": "77c2970829c31d597afdc2654cfa49156c33ad9473e06d1ac7d23cb8e647bfe8"
+    },
+    {
+      "name": "frameworks/foundry/foundry.toml",
+      "sha256": "cc7a7766aeef683023a05a6f22ec68720407aea37c4ef7c1ff7a6cb191ae6454"
+    },
+    {
+      "name": "frameworks/foundry/src/HistoryConsumer.sol",
+      "sha256": "1513267f44ade50aa8953f3aec20a4a382da9cf728e57c9e56e9c71b6cede883"
+    },
+    {
       "name": "README.txt",
-      "sha256": "811f3644e1fcb96fe2121e9dfc4879892c4ac0c9994a48c160dc20f492e0296a"
+      "sha256": "bdd48ab382465ecad14de1891159514baabc0d82b57c2c32e5b962c048eca9e1"
     },
     {
       "name": "LICENSE.txt",
@@ -28,19 +69,19 @@
     },
     {
       "name": "HistoryConsumer.sol",
-      "sha256": "2c0b1547eb3aa45019f8c4058a585fea733c90be32cb333a46cf4ca5c7d8aa7a"
+      "sha256": "1513267f44ade50aa8953f3aec20a4a382da9cf728e57c9e56e9c71b6cede883"
     },
     {
       "name": "verify-workflow.yml",
-      "sha256": "1004a58d28f7f75093dbd6e7740466e0594f073371ee8cc5b93ae59338ed033b"
+      "sha256": "e6e91ecd334c05c5cfe14da1618789ec2e7dbc8a3db645e7ccbea3332383b5e0"
     },
     {
       "name": "package.json",
-      "sha256": "23b2147bf1e54c309deea474970cb8fd7b8be9dfbc0a8d5038dde72059bd9844"
+      "sha256": "a152aa2269cf5ea7f8eaec20767d1403837c296326a589a65632159e38a6892d"
     },
     {
       "name": "package-lock.json",
-      "sha256": "698c7bfece868d6e1c8c7fcbd856c33d2dbd54f04d3beb18503a4b694d4d41c0"
+      "sha256": "08b26d79cd10dc48ce76cda3c0dd737d2357174afc297f3512f98b1d7e5d4ce1"
     }
   ]
 }
